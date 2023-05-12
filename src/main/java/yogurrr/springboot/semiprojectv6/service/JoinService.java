@@ -1,6 +1,6 @@
-package yogurrr.springboot.semiprojectv6boot.service;
+package yogurrr.springboot.semiprojectv6.service;
 
-import yogurrr.springboot.semiprojectv5.model.Member;
+import yogurrr.springboot.semiprojectv6.model.Member;
 
 public interface JoinService {
     String findZipcode(String dong);

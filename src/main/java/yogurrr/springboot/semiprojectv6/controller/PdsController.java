@@ -1,15 +1,15 @@
-package yogurrr.springboot.semiprojectv6boot.controller;
+package yogurrr.springboot.semiprojectv6.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/gallery")
-public class GalleryController {
+@RequestMapping("/pds")
+public class PdsController {
 
     @GetMapping("/list")
     public String list() {
-        return "gallery/list.tiles";
+        return "pds/list.tiles";
     }
 }

@@ -3,14 +3,14 @@
 <mapper namespace="board">
 
     <select id="selectBoard" statementType="PREPARED" parameterType="int"
-            resultType="yogurrr.springboot.semiprojectv5.model.Board">
+            resultType="yogurrr.springboot.semiprojectv6.model.Board">
         select bno, title, userid, thumbs, views, regdate from BOARD order by bno desc limit #{stbno}, 25;
     </select>
 
     <!-- 동적 질의문으로 검색 기능 구현 -->
     <!-- 단, 컬럼명이나 테이블명에는 #{}가 아닌 ${}을 사용! -->
     <select id="selectFindBoard" statementType="PREPARED" parameterType="map"
-            resultType="yogurrr.springboot.semiprojectv5.model.Board">
+            resultType="yogurrr.springboot.semiprojectv6.model.Board">
         select bno, title, userid, thumbs, views, regdate from BOARD
         <if test="ftype != 'titcont'">where ${ftype} like concat(#{fkey}, '%')</if>
         <if test="ftype == 'titcont'">where title like concat('%', #{fkey}, '%') or contents like concat('%', #{fkey}, '%')</if>
@@ -27,11 +27,11 @@
         <if test="ftype == 'titcont'">where title like concat('%', #{fkey}, '%') or contents like concat('%', #{fkey}, '%')</if>
     </select>
 
-    <insert id="insertBoard" statementType="PREPARED" parameterType="yogurrr.springboot.semiprojectv5.model.Board">
+    <insert id="insertBoard" statementType="PREPARED" parameterType="yogurrr.springboot.semiprojectv6.model.Board">
         insert into BOARD (title, userid, content) VALUES (#{title}, #{userid}, #{contents});
     </insert>
 
-    <select id="selectOneBoard" statementType="PREPARED" parameterType="String" resultType="yogurrr.springboot.semiprojectv5.model.Board">
+    <select id="selectOneBoard" statementType="PREPARED" parameterType="String" resultType="yogurrr.springboot.semiprojectv6.model.Board">
         select title, userid, regdate, thumbs, views, content from BOARD where bno = #{bno};
     </select>
 

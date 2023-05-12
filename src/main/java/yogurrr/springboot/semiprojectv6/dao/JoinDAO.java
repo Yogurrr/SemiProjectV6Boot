@@ -1,7 +1,7 @@
-package yogurrr.springboot.semiprojectv6boot.dao;
+package yogurrr.springboot.semiprojectv6.dao;
 
-import yogurrr.springboot.semiprojectv5.model.Member;
-import yogurrr.springboot.semiprojectv5.model.Zipcode;
+import yogurrr.springboot.semiprojectv6.model.Member;
+import yogurrr.springboot.semiprojectv6.model.Zipcode;
 
 import java.util.List;
 

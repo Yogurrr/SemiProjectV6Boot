@@ -1,9 +1,9 @@
-package yogurrr.springboot.semiprojectv6boot.service;
+package yogurrr.springboot.semiprojectv6.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import yogurrr.springboot.semiprojectv5.dao.BoardDAO;
-import yogurrr.springboot.semiprojectv5.model.Board;
+import yogurrr.springboot.semiprojectv6.dao.BoardDAO;
+import yogurrr.springboot.semiprojectv6.model.Board;
 
 import java.util.HashMap;
 import java.util.List;

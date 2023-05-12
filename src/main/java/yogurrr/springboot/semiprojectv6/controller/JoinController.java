@@ -1,4 +1,4 @@
-package yogurrr.springboot.semiprojectv6boot.controller;
+package yogurrr.springboot.semiprojectv6.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import yogurrr.springboot.semiprojectv5.model.Member;
-import yogurrr.springboot.semiprojectv5.service.JoinService;
+import yogurrr.springboot.semiprojectv6.model.Member;
+import yogurrr.springboot.semiprojectv6.service.JoinService;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
